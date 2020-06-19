@@ -115,8 +115,8 @@ func (c *WSClient) handleWS(ctx context.Context, rawurl string, q chan Event) er
 		if err != nil {
 			q <- &ErrorEvent{Err: err}
 
-			// Reconnect.
-			break
+			// End.
+			return err
 		}
 
 		err = nil
