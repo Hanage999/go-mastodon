@@ -1,4 +1,4 @@
-module github.com/mattn/go-mastodon
+module github.com/hanage999/go-mastodon
 
 go 1.23
 

@@ -4,8 +4,13 @@ import (
 	"context"
 	"fmt"
 
+<<<<<<< HEAD
 	"github.com/mattn/go-mastodon"
 	"github.com/urfave/cli/v2"
+=======
+	"github.com/hanage999/go-mastodon"
+	"github.com/urfave/cli"
+>>>>>>> 6d9f14f (conform to go module)
 )
 
 func cmdInstanceActivity(c *cli.Context) error {
