@@ -9,7 +9,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 	"github.com/urfave/cli"
 )
 

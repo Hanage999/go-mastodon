@@ -1,9 +1,9 @@
 # go-mastodon
 
-[![Build Status](https://travis-ci.org/mattn/go-mastodon.svg?branch=master)](https://travis-ci.org/mattn/go-mastodon)
-[![CodeCov](https://codecov.io/gh/mattn/go-mastodon/branch/master/graph/badge.svg)](https://codecov.io/gh/mattn/go-mastodon)
-[![GoDoc](https://godoc.org/github.com/mattn/go-mastodon?status.svg)](http://godoc.org/github.com/mattn/go-mastodon)
-[![Go Report Card](https://goreportcard.com/badge/github.com/mattn/go-mastodon)](https://goreportcard.com/report/github.com/mattn/go-mastodon)
+[![Build Status](https://travis-ci.org/hanage999/go-mastodon.svg?branch=master)](https://travis-ci.org/hanage999/go-mastodon)
+[![CodeCov](https://codecov.io/gh/hanage999/go-mastodon/branch/master/graph/badge.svg)](https://codecov.io/gh/hanage999/go-mastodon)
+[![GoDoc](https://godoc.org/github.com/hanage999/go-mastodon?status.svg)](http://godoc.org/github.com/hanage999/go-mastodon)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hanage999/go-mastodon)](https://goreportcard.com/report/github.com/hanage999/go-mastodon)
 
 ## Usage
 
@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func main() {
@@ -25,7 +25,7 @@ func main() {
 		Server:     "https://mstdn.jp",
 		ClientName: "client-name",
 		Scopes:     "read write follow",
-		Website:    "https://github.com/mattn/go-mastodon",
+		Website:    "https://github.com/hanage999/go-mastodon",
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -45,7 +45,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func main() {
@@ -138,7 +138,7 @@ func main() {
 ## Installation
 
 ```
-$ go get github.com/mattn/go-mastodon
+$ go get github.com/hanage999/go-mastodon
 ```
 
 ## License

@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func ExampleRegisterApp() {
@@ -14,7 +14,7 @@ func ExampleRegisterApp() {
 		Server:     "https://mstdn.jp",
 		ClientName: "client-name",
 		Scopes:     "read write follow",
-		Website:    "https://github.com/mattn/go-mastodon",
+		Website:    "https://github.com/hanage999/go-mastodon",
 	})
 	if err != nil {
 		log.Fatal(err)

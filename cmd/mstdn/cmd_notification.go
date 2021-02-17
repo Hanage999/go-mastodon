@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/fatih/color"
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 	"github.com/urfave/cli"
 )
 
