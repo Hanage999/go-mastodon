@@ -9,8 +9,13 @@ import (
 	"strings"
 	"text/template"
 
+<<<<<<< HEAD
 	"github.com/mattn/go-mastodon"
 	"github.com/urfave/cli/v2"
+=======
+	"github.com/hanage999/go-mastodon"
+	"github.com/urfave/cli"
+>>>>>>> 6d9f14f (conform to go module)
 )
 
 // SimpleJSON is a struct for output JSON for data to be simple used

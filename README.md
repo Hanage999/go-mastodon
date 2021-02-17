@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func main() {
@@ -26,7 +26,7 @@ func main() {
 		Server:     "https://mstdn.jp",
 		ClientName: "client-name",
 		Scopes:     "read write follow",
-		Website:    "https://github.com/mattn/go-mastodon",
+		Website:    "https://github.com/hanage999/go-mastodon",
 	})
 	if err != nil {
 		log.Fatal(err)
@@ -46,7 +46,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func main() {
@@ -233,8 +233,13 @@ func main() {
 
 ## Installation
 
+<<<<<<< HEAD
 ```shell
 go install github.com/mattn/go-mastodon@latest
+=======
+```
+$ go get github.com/hanage999/go-mastodon
+>>>>>>> 6d9f14f (conform to go module)
 ```
 
 ## License

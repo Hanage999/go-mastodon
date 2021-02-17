@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func TestCmdStream(t *testing.T) {
