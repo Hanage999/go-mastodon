@@ -150,8 +150,6 @@ func (c *WSClient) handleWS(ctx context.Context, rawurl string, q chan Event) er
 			q <- &ErrorEvent{err}
 		}
 	}
-
-	return nil
 }
 
 func (c *WSClient) dialRedirect(rawurl string) (conn *websocket.Conn, err error) {

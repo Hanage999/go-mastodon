@@ -5,13 +5,8 @@ import (
 	"errors"
 	"strings"
 
-<<<<<<< HEAD
-	"github.com/mattn/go-mastodon"
-	"github.com/urfave/cli/v2"
-=======
 	"github.com/hanage999/go-mastodon"
-	"github.com/urfave/cli"
->>>>>>> 6d9f14f (conform to go module)
+	"github.com/urfave/cli/v2"
 )
 
 func cmdTimeline(c *cli.Context) error {
@@ -78,7 +73,7 @@ func cmdTimelineHashtag(c *cli.Context) error {
 	if !c.Args().Present() {
 		return errors.New("arguments required")
 	}
-        local := c.Bool("local")
+	local := c.Bool("local")
 	tag := strings.TrimLeft(argstr(c), "#")
 
 	client := c.App.Metadata["client"].(*mastodon.Client)
