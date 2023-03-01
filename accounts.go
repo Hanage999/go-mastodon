@@ -187,7 +187,7 @@ func (c *Client) GetAccountStatuses(ctx context.Context, id ID, pg *Pagination) 
 	return statuses, nil
 }
 
-// GetAccountPinnedStatuses returns statuses pinned by specified accuont.
+// GetAccountPinnedStatuses returns statuses pinned by specified account.
 func (c *Client) GetAccountPinnedStatuses(ctx context.Context, id ID) ([]*Status, error) {
 	var statuses []*Status
 	params := url.Values{}
