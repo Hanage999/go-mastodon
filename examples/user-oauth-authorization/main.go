@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"os"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func ConfigureClient() {
@@ -15,7 +15,7 @@ func ConfigureClient() {
 		Server:       "https://mastodon.social",
 		ClientName:   "publicApp",
 		Scopes:       "read write follow",
-		Website:      "https://github.com/mattn/go-mastodon",
+		Website:      "https://github.com/hanage999/go-mastodon",
 		RedirectURIs: "urn:ietf:wg:oauth:2.0:oob",
 	}
 

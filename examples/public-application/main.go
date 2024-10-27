@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/mattn/go-mastodon"
+	"github.com/hanage999/go-mastodon"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 		Server:       "https://mastodon.social",
 		ClientName:   "publicApp",
 		Scopes:       "read write push",
-		Website:      "https://github.com/mattn/go-mastodon",
+		Website:      "https://github.com/hanage999/go-mastodon",
 		RedirectURIs: "urn:ietf:wg:oauth:2.0:oob",
 	}
 
