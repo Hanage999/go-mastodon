@@ -93,10 +93,14 @@ func (c *WSClient) handleWS(ctx context.Context, rawurl string, q chan Event) er
 		// End.
 		return err
 	}
+	defer conn.Close()
+
+	ctxConn, cancel := context.WithCancel(ctx)
+	defer cancel()
 
 	// Close the WebSocket when the context is canceled.
 	go func() {
-		<-ctx.Done()
+		<-ctxConn.Done()
 		conn.Close()
 	}()
 
