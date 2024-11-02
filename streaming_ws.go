@@ -93,10 +93,14 @@ func (c *WSClient) handleWS(ctx context.Context, rawurl string, q chan Event) er
 		// End.
 		return err
 	}
+	defer conn.Close()
+
+	ctxConn, cancel := context.WithCancel(ctx)
+	defer cancel()
 
 	// Close the WebSocket when the context is canceled.
 	go func() {
-		<-ctx.Done()
+		<-ctxConn.Done()
 		conn.Close()
 	}()
 
@@ -111,11 +115,11 @@ func (c *WSClient) handleWS(ctx context.Context, rawurl string, q chan Event) er
 		}
 
 		var s Stream
-		err := conn.ReadJSON(&s)
+		err = conn.ReadJSON(&s)
 		if err != nil {
 			q <- &ErrorEvent{Err: err}
 
-			// Reconnect.
+			// End.
 			break
 		}
 
@@ -151,7 +155,7 @@ func (c *WSClient) handleWS(ctx context.Context, rawurl string, q chan Event) er
 		}
 	}
 
-	return nil
+	return err
 }
 
 func (c *WSClient) dialRedirect(rawurl string) (conn *websocket.Conn, err error) {
